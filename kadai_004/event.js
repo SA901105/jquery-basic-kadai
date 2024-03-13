@@ -1,13 +1,7 @@
-$(function() {
-  $(window).on({
-  // HTMLドキュメントが読み込まれたときのイベント
-  'load': () => {
-    console.log('loadイベントが発生しました');
-  },
+$('window').on('load',function(){
+  console.log('loadイベントが発生しました');
+});
 
-  // 画面をスクロールしたときのイベント
-  'scroll': () => {
+$('window')/on('scroll',function(){
     console.log('scrollイベントが発生しました');
-  },
-});
-});
+  });
